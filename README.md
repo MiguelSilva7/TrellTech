@@ -1,62 +1,52 @@
-Trello App Mobile avec Expo
+# Trello App Mobile avec Expo
 
-Application mobile développée sur Expo en React Native pour interagir avec l’API Trello.  
-Elle permet de gérer facilement des cartes Trello depuis l'app.
+Une application mobile en **React Native + Expo** pour gérer vos cartes Trello facilement.
 
-Objectif
-Le but de ce projet est de connecter une app mobile à l’API Trello pour:
+---
 
--->  L’affichage dynamique des workspaces, listes, et cartes
--->  Des actions CRUD sur les cartes Trello (CREATE,READ,UPDATE,DELETE)
--->  Une utilisation simple avec une clés d’API perso
+## Objectif
 
-Fonctionnalités principales
+- Afficher les **workspaces**, **listes** et **cartes** depuis Trello.  
+- Faire des actions **CRUD** sur les cartes (Créer, Lire, Modifier, Supprimer).  
+- Utiliser l’app avec une **clé API personnelle**.
 
--->  Connexion à l’API Trello via une clé et un token utilisateur
--->  Récupération des listes et cartes d’un board
--->  Création de nouvelles cartes
--->  Édition des cartes existantes
---> Suppression des cartes
+---
 
-Technologies utilisées
+## Fonctionnalités
 
---> Expo --> (https://docs.expo.dev/) –DOC EXPO
---> React Native --> (https://reactnative.dev/) –DOC REACT NATIVE
---> Trello REST --> (https://developer.atlassian.com/cloud/trello/rest/) –Communication à trello
---> Postman--> (https://www.postman.com/) –Test
+- Connexion à l’API Trello (clé + token)  
+- Voir les listes et cartes d’un board  
+- Créer, modifier et supprimer des cartes
 
-Structure du projet
+---
 
---> components/ --> Collapsible, ParallaxScrollView,Text.
---> screens/    --> Ecrans principaux de l’app (explore,index) 
---> api/        --> Fichier pour gérer les appels à l’API 
---> assets/     --> Icônes, images, logos
---> App.js      --> Entrée principale de l’app
---> README.md   --> Documentation du projet
+## Installation
 
-Installation locale -->
---> 1. Cloner le dépôt
-     cmd -->  git clone '...........'
---> 2. Accéder au dossier
-      cd 'repo'  
---> 3. Installer les dépendances
-      npm install
---> 4. Lancer l’app
-      npx expo start
+1. Cloner le dépôt : `git clone 'URL_DU_DEPOT'`  
+2. Aller dans le dossier du projet : `cd 'repo'`  
+3. Installer les dépendances : `npm install`  
+4. Lancer l’application : `npx expo start` et ouvrir sur un téléphone ou un simulateur
 
-Configuration Trello API
+---
 
-Pour faire fonctionner l’application, il vous faudra une clé API et un token utilisateur :
--->  Générer votre clé sur (https://trello.com/app-key)
--->  Suivre les instructions pour obtenir un token 
--->  Ajouter votre API_KEY, TOKEN, et BASE_URL à leurs place soit en brut dans le projet sois dans le .env (encore pas fonctionnel à ce jour, il serra dans les prochaines maj )
+## Configuration API Trello
 
---> EVITEZ de push la clé_api!!
+- Générer votre **clé API** sur [Trello App Key](https://trello.com/app-key)  
+- Obtenir un **token utilisateur**  
+- Ajouter **API_KEY**, **TOKEN** et **BASE_URL** dans le projet (en dur ou via `.env`)  
 
-Ressources utiles: 
- -->    Doc officielle Trello API
- -->    Postman
- -->    Tuto Expo (YouTube)
- -->    API Auth 
+⚠️ Ne jamais push vos clés sur GitHub !
 
-Projet Epitech fait par : --> Dilhan - Miguel
+---
+
+## Structure du projet
+
+- `components/` → Composants réutilisables  
+- `screens/` → Écrans de l’application  
+- `api/` → Gestion des appels à l’API  
+- `assets/` → Images et icônes  
+- `App.js` → Entrée principale  
+
+---
+
+Projet réalisé par : **Dilhan & Miguel**
