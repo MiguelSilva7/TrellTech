@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "T-DEV-600-LYO_19",
+    "slug": "T-DEV-600-LYO_19",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "API_KEY": "1006ebc0b2b6e2431b065884d8d9d0a0",
+      "TOKEN": "ATTA05a495bdded535f87ba28b9396a0ddf753d8782bccb50f34aee0d3003e166b5778945DEA",
+      "API_BASE_URL": "https://api.trello.com/1/organizations/"
+    }
+  }
+}
